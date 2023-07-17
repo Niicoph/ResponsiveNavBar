@@ -1,0 +1,387 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 13vh;
+    background-color: #242425;
+    display: flex;
+
+}
+.logo-container {
+    width: 40%;
+    height: cover;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+.nav-container {
+    width: 80%;
+    height: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+.socialM-container {
+    width: 40%;
+    height: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+#brandImg {
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.logo-inside-container {
+    margin-right: 112px;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;   
+  
+}
+h1 {
+    color: white;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.nav-bar {
+    width: 85%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 35rem;
+    height: 2.1rem;
+    font-size: 1em;
+
+}
+button {
+    height: 2.1rem;
+    width: 3rem;
+}
+
+i {
+    color: #000;
+}
+.nav-inside-container {
+    height: 34px;
+    display: flex;
+}
+.media-container {
+    margin-right: 100px;
+    width: 70%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#mediaI, #mediaT, #mediaF , #mediaL {
+    border-radius: 146px 146px 146px 146px;
+    -webkit-border-radius: 146px 146px 146px 146px;
+    -moz-border-radius: 146px 146px 146px 146px;
+    width: 40px;
+    height: 40px;
+}
+#mediaL {
+    margin-right: 0;
+}
+
+#mediaI:hover,
+#mediaT:hover,
+#mediaF:hover,
+#mediaL:hover {
+    box-shadow: 0px 0px 21px -4px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 0px 21px -4px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 21px -4px rgba(255,255,255,0.75);
+}
+
+
+#jsImg:hover,
+#jsTitle:hover,
+button:hover,
+h1:hover,
+#brandImg:hover {
+    opacity: 0.7;
+}
+
+.items-container {
+    background-color: #000;
+    width: 100%;
+    height: 4vh;
+    color: white;
+}
+
+
+ul {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: inherit;
+    padding: 0;
+}
+li {
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    margin: 5px;
+    transition: background-color 0.5s linear;
+  }
+
+li:hover {
+   background-color: white;
+   color: black;
+}
+ 
+/*
+here starts js dom 
+*/
+
+#jsDivContainer {
+    background-color: #1C1C1E;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40vh;
+    color: white;
+    
+}
+#jsDivChild {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#jsTitleContainer {
+    display: flex;
+    height: 17vh;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+.jsDivBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: 20%;
+    width: 100%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.jsDivBox:hover,
+#jsCloseButton:hover {
+    background-color: white;
+    color: black;
+}
+#jsImg {
+    width: 100px;
+    height: 100px;
+}
+#jsTitle {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+
+#jsBrandContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#jsCloseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38%;
+}
+
+#jsCloseButton {
+    color: white;
+    font-size: 30px;
+    background-color: #242425;
+    border: 3px solid white;
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+     
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 0.6;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes body-fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes test {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+    header {
+        width: 100%;
+        flex-wrap: wrap;
+        height: 35vh;
+    }
+    input {
+        width: 25rem;
+    }
+    .socialM-container,  .nav-container , .logo-container {
+        width: 100%;
+    }
+    .logo-inside-container {
+        margin-right: 150px;
+    }
+    .media-container {
+        margin-right: 80px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+    input {
+        width: 12rem;
+        
+    }
+    .logo-inside-container {
+        display: block;
+        margin-left: 10px;
+        position: absolute;
+        top: 0;
+        width: 20%;
+    }
+    .logo-container {
+        width: 32%;
+    }
+    .media-container {
+        margin-right: 15px;
+    }
+    .socialM-container {
+        width: 26%;
+    }
+    #mediaI, #mediaT, #mediaF , #mediaL {
+        width: 28px;
+        height: 28px;
+    }
+    #mediaF{
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    #mediaT {
+        margin-right: 3px;
+    }
+    #brandImg {
+      display: flex;
+      width: 60px;
+      height: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    li {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    header {
+        width: 100%;
+    }
+    input {
+        width: 25rem;
+    }
+    .logo-inside-container {
+        margin-right: 45px;
+    }
+    .media-container {
+        margin-right: 35px;
+    }
+    #mediaF{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #mediaT {
+        margin-right: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 890px) {
+    header {
+        width: 100%;
+    }
+    body {
+        background-color: violet;
+    }
+    input {
+        width: 17rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .media-container {
+        margin-right: 30px;
+    }
+    #mediaF{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #mediaT {
+        margin-right: 10px;
+    }
+    .logo-inside-container {
+        margin-left: 18px;
+    }
+    .logo-container {
+        width: 20%;
+    }   
+    input {
+        width: 25rem;
+    }
+}
+  
