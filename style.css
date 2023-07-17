@@ -257,6 +257,26 @@ here starts js dom
     }
   }
 
+
+
+  @media (min-width: 400px) and (max-width: 479px) {
+    input {
+        width: 21rem !important;
+    }
+    header {
+        width: 100%;
+    }
+    .items-container {
+        height: 40vh;
+    }
+    ul {
+        flex-wrap: wrap;
+    }
+
+    
+  }
+
+
  /* Media Query for Mobile Devices */
  @media (max-width: 480px) {
     header {
